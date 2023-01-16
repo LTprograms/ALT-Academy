@@ -1,0 +1,28 @@
+/*-------OFFCANVAS LINKS----------*/
+.link-li a{
+    display: block;
+    width: 100%;
+}
+.link-li:hover{
+    background-color: #f3f3f3;
+}
+/*--------POINTS BOX--------------*/
+.conteo{
+    margin: 5rem auto;
+    width: 600px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 16px;
+}
+.conteo-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}.conteo-btn button{width: 90px;}
+
+@media (max-width:650px) {
+    .conteo{
+        width: 300px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CicleroSM</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--JS-->
+    <script src="../js/conteo.js"></script>
+</head>
+<body> 
+    <!--HEADER-->
+    <header>
+        <nav class="navbar bg-light position-sticky sticky-top">
+            <div class="container-fluid">
+                <!--BRAND-->
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    CicleroSM
+                </a>
+                <!--BTN TOGGLER-->
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--OFFCANVAS-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Servicios</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <!--LINKS SERVICES-->
+                        <ul class="list-unstyled fw-bold fs-5 text-upper">
+                            <li class="link-li">
+                                <a href="./conteo.html" class="p-3 link-dark text-decoration-none">Conteo</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./prospectos.html" class="p-3 link-dark text-decoration-none">Prospectos</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./solucionarios.html" class="p-3 link-dark text-decoration-none">Solucionarios</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./teoria.html" class="p-3 link-dark text-decoration-none">Teoria</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./preguntas.html" class="p-3 link-dark text-decoration-none">Preguntas</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./simulacros.html" class="p-3 link-dark text-decoration-none">Simulacros</a>
+                            </li>
+                            <li class="link-li">
+                                <a href="./complementario.html" class="p-3 link-dark text-decoration-none">Material Complementario</a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="row fs-5 conteo">
+            <div class="col-sm-4 conteo-btn">
+                <button class="btn btn-success fs-5" id="btn-good">Buena</button>
+                <button class="btn btn-danger fs-5" id="btn-bad">Mala</button>
+                <button class="btn btn-warning fs-5" id="btn-back">Borrar</button>
+            </div>
+            <div class="col-sm-8 conteo-data">
+                <p>Puntaje: <span id="ptj">0</span></p>
+                <p>Buenas: <span id="good">0</span></p>
+                <p>Malas: <span id="bad">0</span></p>
+                <p>Total: <span id="total">0</span></p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</html>
