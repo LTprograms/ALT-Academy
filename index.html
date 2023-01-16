@@ -8,11 +8,14 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!--JS-->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body> 
     <!--HEADER-->
-    <header>
-        <nav class="navbar bg-light position-sticky sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar bg-light">
             <div class="container-fluid">
                 <!--BRAND-->
                 <a class="navbar-brand" href="#">
@@ -61,7 +64,7 @@
     </header>
     <section>
         <!--SLIDER-->
-        <div class="container">
+        <div class="container my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!--IMAGES SLIDER-->
@@ -83,6 +86,104 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+        </div>
+        <div class="container my-5 links-sect">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Conteo</h5>
+                            <p class="card-text flex-grow-1">Esta secci&oacute;n te ayuda para saber tu nota de un simulacro o examen del cual no tengas tus resultados a&uacute;n</p>
+                            <a href="./templates/conteo.html" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Prospecto</h5>
+                            <p class="card-text flex-grow-1">Descarga aqu&iacute; el &uacute;ltimo prospecto de San Marcos!!!</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Solucionarios</h5>
+                            <p class="card-text flex-grow-1">Puedes ver aqu&iacute; los solucionarios de los &uacute;ltimos ex&aacute;menes de admisi&oacute;n</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Teor&iacute;a</h5>
+                            <p class="card-text flex-grow-1">Esta secci&oacute;n te ayuda para saber tu nota de un simulacro o examen del cual no tengas tus resultados a&uacute;n</p>
+                            <a href="./templates/conteo.html" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Preguntas</h5>
+                            <p class="card-text flex-grow-1">Descarga aqu&iacute; el &uacute;ltimo prospecto de San Marcos!!!</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Simulacros</h5>
+                            <p class="card-text flex-grow-1">Puedes ver aqu&iacute; los solucionarios de los &uacute;ltimos ex&aacute;menes de admisi&oacute;n</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Material complementario</h5>
+                            <p class="card-text flex-grow-1">Esta secci&oacute;n te ayuda para saber tu nota de un simulacro o examen del cual no tengas tus resultados a&uacute;n</p>
+                            <a href="./templates/conteo.html" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Foro</h5>
+                            <p class="card-text flex-grow-1">Descarga aqu&iacute; el &uacute;ltimo prospecto de San Marcos!!!</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 my-3">
+                    <div class="card">
+                        <img src="./img/conteo.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <h5 class="card-title">Videos</h5>
+                            <p class="card-text flex-grow-1">Puedes ver aqu&iacute; los solucionarios de los &uacute;ltimos ex&aacute;menes de admisi&oacute;n</p>
+                            <a href="#" class="btn btn-primary">Click aqu&iacute;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--INFO-->

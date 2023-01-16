@@ -6,13 +6,18 @@
 .link-li:hover{
     background-color: #f3f3f3;
 }
+.links-sect img{
+    cursor: pointer;
+}
+.card{
+    height: 100%;
+}
 /*--------POINTS BOX--------------*/
 .conteo{
     margin: 5rem auto;
     width: 600px;
     border: 1px solid black;
     box-shadow: 1px 1px 10px black;
-    border-radius: 16px;
 }
 .conteo-btn{
     display: flex;
