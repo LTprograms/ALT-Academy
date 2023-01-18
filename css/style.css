@@ -1,0 +1,14 @@
+@import url(./root.css);
+
+/*backgrouds*/
+.bg-sm{background-color: var(--sm-yellow);}
+
+.nav1 a{
+    color: white;
+    transition: all ease-in-out .3s;
+}
+.nav1 a:hover{color: var(--sm-sky);}
+
+@media (max-width:400px) {
+    .nav1{display: none;}
+}
