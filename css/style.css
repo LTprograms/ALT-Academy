@@ -1,5 +1,17 @@
 @import url(./root.css);
-
+.link-li a{
+    display: block;
+    width: 100%;
+}
+.link-li:hover{
+    background-color: #f3f3f3;
+}
+.links-sect img{
+    cursor: pointer;
+}
+.card{
+    height: 100%;
+}
 /*backgrouds*/
 .bg-sm{background-color: var(--sm-yellow);}
 
@@ -8,6 +20,63 @@
     transition: all ease-in-out .3s;
 }
 .nav1 a:hover{color: var(--sm-sky);}
+
+/*POINTERS*/
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 430px;
+    border-right: 1px dashed #bdbdbd;
+}
+.history{
+    height: 430px;
+    overflow-y: scroll;
+}
+.btn-point{
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: 1px solid #3b3b3b;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.point-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px dashed #bdbdbd;
+}.point-box td{padding: 1rem; text-align: end;}
+.hist-ul{
+    list-style: none;
+    margin: auto;
+    width: fit-content;
+    padding: 0 3rem;
+}
+.history::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.history {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+@media (max-width:768px) {
+    .btn-box{
+        flex-direction: row;
+        height: fit-content;
+    }
+}
 @media (max-width:400px) {
     .nav1{display: none;}
+    .btn-box{flex-wrap: wrap; border: 0;}
+    .btn-point{
+        --size2: 80px;
+        width: var(--size2);
+        height: var(--size2);
+    }
+    .point-box{border: 0;}
 }

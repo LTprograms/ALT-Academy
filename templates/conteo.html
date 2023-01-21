@@ -7,7 +7,6 @@
     <title>CicleroSM</title>
     <!--CSS-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/style.css">
     <!--JS-->
     <script src="../js/conteo.js"></script>
@@ -68,18 +67,35 @@
             </div>
         </nav>        
     </header>
-    <section>
-        <div class="row fs-5 rounded conteo">
-            <div class="col-sm-4 conteo-btn">
-                <button class="btn btn-success fs-5" id="btn-good">Buena</button>
-                <button class="btn btn-danger fs-5" id="btn-bad">Mala</button>
-                <button class="btn btn-warning fs-5" id="btn-back">Borrar</button>
-            </div>
-            <div class="col-sm-8 conteo-data">
-                <p>Puntaje: <span id="ptj">0</span></p>
-                <p>Buenas: <span id="good">0</span></p>
-                <p>Malas: <span id="bad">0</span></p>
-                <p>Total: <span id="total">0</span></p>
+    <section">
+        <div class="container-fluid mt-1">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="btn-box">
+                        <button id="btn-good" class="btn btn-success btn-point">Buena</button>
+                        <button id="btn-bad" class="btn btn-danger btn-point">Mala</button>
+                        <button id="btn-blank" class="btn btn-light btn-point">Blanco</button>
+                        <button id="btn-back" class="btn btn-warning btn-point">Borrar</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="fs-2 point-box h-100">
+                        <table class="w-75">
+                            <tr><td>Puntaje:</td><td id="ptj">0</td></tr>
+                            <tr><td>Buenas:</td><td id="good">0</td></tr>
+                            <tr><td>Malas:</td><td id="bad">0</td></tr>
+                            <tr><td>Blanco:</td><td id="blank">0</td></tr>
+                            <tr><td>Total:</td><td id="total">0</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <h2 class="text-center">Historial</h2>
+                    <div class="history">
+                        <ul class="hist-ul" id="ul1">                                                                                    
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
