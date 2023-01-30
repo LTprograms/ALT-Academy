@@ -19,7 +19,7 @@
     color: white;
     transition: all ease-in-out .3s;
 }
-.nav1 a:hover{color: var(--sm-sky);}
+.nav1 a:hover, .active-sky{color: var(--sm-sky);}
 /*POINTERS*/
 .btn-box{
     display: flex;
@@ -63,6 +63,11 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+/*PROSPECTO*/
+.pdf{
+    width: 100%;
+    height: 500px;
+}
 @media (max-width:768px) {
     .btn-box{
         flex-direction: row;
@@ -70,6 +75,7 @@
     }
 }
 @media (max-width:400px) {
+    .nav1{display: none;}
     .btn-box{flex-wrap: wrap; border: 0;}
     .btn-point{
         --size2: 80px;

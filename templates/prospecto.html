@@ -6,67 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prospecto</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!--HEADER-->
-    <header class="sticky-top">
-        <nav class="navbar bg-light">
+    <header>
+        <nav class="navbar navbar-expand bg-sm d-flex justify-content-end">            
+            <!--NAV 1-->
+            <ul class="navbar-nav me-2 nav1">
+                <li class="nav-item">
+                    <a href="./prospecto.html" class="active-sky nav-link" style="color: var(--sm-sky);">Prospecto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./foro.html" class="nav-link">Foro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./complementario.html" class="nav-link">Material Complementario</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./gruia.html" class="nav-link">Gu&iacute;a</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-light">
             <div class="container-fluid">
                 <!--BRAND-->
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="#">
                     <img src="../img/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    CicleroSM
+                    ALT Academy
                 </a>
-                <!--BTN TOGGLER-->
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--OFFCANVAS-->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Servicios</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body p-0">
-                        <!--LINKS SERVICES-->
-                        <ul class="list-unstyled fw-bold fs-5 text-upper">
-                            <li class="link-li">
-                                <a href="./conteo.html" class="p-3 link-dark text-decoration-none">Conteo</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./prospectos.html" class="p-3 link-dark text-decoration-none">Prospectos</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./solucionarios.html" class="p-3 link-dark text-decoration-none">Solucionarios</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./teoria.html" class="p-3 link-dark text-decoration-none">Teoria</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./preguntas.html" class="p-3 link-dark text-decoration-none">Preguntas</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./simulacros.html" class="p-3 link-dark text-decoration-none">Simulacros</a>
-                            </li>
-                            <li class="link-li">
-                                <a href="./complementario.html" class="p-3 link-dark text-decoration-none">Material Complementario</a>
-                            </li>                            
-                        </ul>
-                    </div>
+                <!--NAV 2-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./teoria.html">Teor&iacute;a</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./preguntas.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./simulacros.html">Simulacros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./solucionarios.html">Solucionarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conteo.html">Conteo</a>
+                        </li>                        
+                    </ul>                    
                 </div>
             </div>
-        </nav>
+        </nav>        
     </header>
     <section>
         <div class="container">
             <div class="row">
-                <h3 class="text-center">Descarga el ultimo prospecto</h3>
-                <div class="ratio ratio-21x9">
-                    <iframe src="../docs/Prospecto.pdf" frameborder="0"></iframe>
+                <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <p>Descarga aqu&iacute; el &uacute;ltimo prospecto de San Marcos</p>
+                    <a target="_blank" href="../docs/Prospecto.pdf" class="btn btn-primary">Descargar</a>
                 </div>
-            </div>
-            <a href="../docs/Prospecto.pdf" class="btn btn-primary">Click para descargar</a>
+                <div class="col-sm-12 col-md-8 my-4">
+                    <iframe class="pdf" src="../docs/Prospecto.pdf" frameborder="0"></iframe>                    
+                </div>
+            </div>            
         </div>
     </section>
 </body>
